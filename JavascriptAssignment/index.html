@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="css/app.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">COLLECTION</a>
+        <a href="#">NEW-ARRIVALS</a>
+    </nav>
+    <header id = "header">
+        <div id="controls">
+            <div class="dot active"onclick=SetImage(1)></div>
+            <div class="dot"onclick=SetImage(2)></div>
+            <div class="dot"onclick=SetImage(3)></div>
+            <div class="dot"onclick=SetImage(4)></div>
+        </div>
+            
+    </header>
+    <section>
+     <h1>Collection</h1>
+     <div>
+        <img class="collectionImg" src="assets/collection2.png" alt="">
+        <img class="collectionImg" src="assets/collection.png" alt="">
+        <img class="collectionImg"  src="assets/collection1.png" alt="">
+    </div>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <footer>
+        <form id="contactForm" action="contact.php" method="post">
+            <img src="assets/email.png" alt="" onclick="ToggleForm()" id="emailIcon"><br>
+            <input type="text" name="name" id="name" placeholder="Name"><br>
+            <input type="text" name="email" id="email" placeholder="Email"><br>
+            <input type="text" name="subject" id="subject"placeholder="Subject"><br>
+            <textarea name="message" id="message" cols="30" rows="10"placeholder="Your message"></textarea><br>
+            <input type="submit" value="SUBMIT">
+        </form>
+    
+    </footer>
+
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
